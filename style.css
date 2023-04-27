@@ -1,0 +1,171 @@
+body {
+    position: relative;
+    background: #F3F5FC;
+    width: 1444px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.entrada_texto {
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+    color: #0A3871;
+}
+
+.rectangulo {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    
+    background: #FFFFFF;
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.muñeco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    margin: 283px 32px 0 32px;
+}
+
+.mensajes_muñeco{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    text-align: center;
+    margin: 619px 32px 0 32px;
+}
+
+.mensaje_muñeco_1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    
+    text-align: center;
+    
+    color: #343A40;
+}
+
+.mensaje_muñeco_2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    
+    color: #495057;
+    margin-top: 20px;    
+}
+
+.mensaje_atencion{
+    position: absolute;
+    width: 250px;
+    height: 18px;
+    left: 210px;
+    top: 851px;
+}
+
+.mensaje_instruccion{
+    position: absolute;
+    width: 229px;
+    height: 28px;
+    left: 240px;
+    top: 851px;
+}
+
+.mensaje_instruccion img{
+    display: inline;
+    width: 16px;
+    height: 16px;
+}
+
+.mensaje_instruccion p{
+    display: inline;
+    width: 205px;
+    height: 18px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+    color: #495057;
+    
+    opacity: 0.8;
+    padding-left: 5px;
+}
+
+.botones{
+    position: absolute;
+    width: 800px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.boton_encriptar{
+    display: inline-block;
+    background: #0A3871;
+    border-radius: 24px;
+
+    width: 280px;
+    height: 19px;
+    padding: 24px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #FFFFFF;  
+}
+
+.boton_desencriptar{
+    display: inline-block;
+    background: #D8DFE8;
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    margin-left: 20px;
+
+    width: 280px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #0A3871;
+}
