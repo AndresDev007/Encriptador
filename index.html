@@ -7,6 +7,7 @@
         <title>Encriptador de texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="encriptador.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
             <section class="caja_entrada_botones">
 
                 <div class="entrada_texto">
-                    <p>Ingrese el texto aquí</p>
+                    <input type="text" placeholder="Ingrese el texto aquí" id="intro_text">
                 </div>
 
                 <div class="mensaje_instruccion">
@@ -30,8 +31,8 @@
                 </div>
     
                 <div class="botones">
-                    <p class="boton_encriptar">Encriptar</p>
-                    <p class="boton_desencriptar">Desencriptar</p>
+                    <button onclick="encriptar()" class="boton_encriptar">Encriptar</button>
+                    <button class="boton_desencriptar">Desencriptar</button>
                 </div>  
 
             </section>

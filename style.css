@@ -1,22 +1,22 @@
 body {
     position: relative;
     background: #F3F5FC;
-    width: 65%;
-    height: 1024px;
+    width: 80%;
+    height: 740px;
     margin: 0 auto;
 }
 
 header{
     position: relative;
     width: 100%;
-    height: 13%;
-    border: 2px solid orange;
+    height: 10%;
+    /* border: 2px solid orange; */
 }
 
 header img{
     position: absolute;
-    width: 10%;
-    top: 25%;
+    width: 8%;
+    top: 40%;
     left: 3%;
 }
 
@@ -24,28 +24,40 @@ header img{
     position: absolute;
     width: 65%;
     height: 81%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 1% 0 0 2%;
 }
 
-.entrada_texto {
+#intro_text {
     position: absolute;
-    left: 15%;
+    width: 70%;
+    left: 13%;
     top: 15%;
-    text-align: center;
+    
+    border: none;
+    border-radius: 10px;
     
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 150%;
-    
+
+    background: #F3F5FC;
     color: #0A3871;
+}
+
+#intro_text::placeholder{
+    color: #0A3871;
+}
+
+#intro_text:focus{
+    outline: none;
 }
 
 .mensaje_instruccion{
     position: absolute;
-    width: 25%;
+    width: 80%;
     left: 15%;
     top: 81%;
 }
@@ -71,6 +83,7 @@ header img{
     position: absolute;
     width: 100%;
     top: 85%;
+    margin-top: 10px;
 }
 
 .boton_encriptar{
@@ -79,9 +92,9 @@ header img{
     border-radius: 24px;
 
     width: 30%;
-    height: 19px;
-    padding: 24px;
-    margin-left: 15%;
+    height: 40px;
+    padding: 10px;
+    margin-left: 13%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -99,11 +112,11 @@ header img{
     
     border: 1px solid #0A3871;
     border-radius: 24px;
-    padding: 24px;
+    padding: 10px;
     margin-left: 20px;
 
     width: 30%;
-    height: 19px;
+    height: 40px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -117,9 +130,9 @@ header img{
 
 .rectangulo {
     position: absolute;
-    width: 33%;
-    height: 944px;
-    left: 67%;
+    width: 27%;
+    height: 667px;
+    left: 73%;
     top: 3.5%;
     
     background: #FFFFFF;
@@ -131,21 +144,21 @@ header img{
 .muñeco {
     position: absolute;
     width: 80%;
-    margin: 60% 10% 0 10%;
+    margin: 30% 10% 0 10%;
 }
 
 .mensajes_muñeco{
     position: absolute;
     width: 80%;
     text-align: center;
-    margin: 140% 10% 0 10%;
+    margin: 110% 10% 0 10%;
 }
 
 .mensaje_muñeco_1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
     
     text-align: center;
