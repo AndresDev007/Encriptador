@@ -1,25 +1,38 @@
 body {
     position: relative;
     background: #F3F5FC;
-    width: 1444px;
+    width: 65%;
     height: 1024px;
     margin: 0 auto;
 }
 
-.logo {
+header{
+    position: relative;
+    width: 100%;
+    height: 13%;
+    border: 2px solid orange;
+}
+
+header img{
     position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    width: 10%;
+    top: 25%;
+    left: 3%;
+}
+
+.caja_entrada_botones{
+    position: absolute;
+    width: 65%;
+    height: 81%;
+    border: 1px solid blue;
+    margin: 1% 0 0 2%;
 }
 
 .entrada_texto {
     position: absolute;
-    width: 577px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
+    left: 15%;
+    top: 15%;
+    text-align: center;
     
     font-family: 'Inter';
     font-style: normal;
@@ -30,12 +43,84 @@ body {
     color: #0A3871;
 }
 
+.mensaje_instruccion{
+    position: absolute;
+    width: 25%;
+    left: 15%;
+    top: 81%;
+}
+
+.mensaje_instruccion img{
+    display: inline;
+}
+
+.mensaje_instruccion p{
+    display: inline;
+    margin-left: 5px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+    color: #495057;
+    opacity: 0.8;
+}
+
+.botones{
+    position: absolute;
+    width: 100%;
+    top: 85%;
+}
+
+.boton_encriptar{
+    display: inline-block;
+    background: #0A3871;
+    border-radius: 24px;
+
+    width: 30%;
+    height: 19px;
+    padding: 24px;
+    margin-left: 15%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #FFFFFF;  
+}
+
+.boton_desencriptar{
+    display: inline-block;
+    background: #D8DFE8;
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    margin-left: 20px;
+
+    width: 30%;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #0A3871;
+}
+
 .rectangulo {
     position: absolute;
-    width: 400px;
+    width: 33%;
     height: 944px;
-    left: 1000px;
-    top: 40px;
+    left: 67%;
+    top: 3.5%;
     
     background: #FFFFFF;
     
@@ -45,17 +130,15 @@ body {
 
 .muñeco {
     position: absolute;
-    width: 336px;
-    height: 304px;
-    margin: 283px 32px 0 32px;
+    width: 80%;
+    margin: 60% 10% 0 10%;
 }
 
 .mensajes_muñeco{
     position: absolute;
-    width: 336px;
-    height: 122px;
+    width: 80%;
     text-align: center;
-    margin: 619px 32px 0 32px;
+    margin: 140% 10% 0 10%;
 }
 
 .mensaje_muñeco_1{
@@ -83,89 +166,3 @@ body {
     margin-top: 20px;    
 }
 
-.mensaje_atencion{
-    position: absolute;
-    width: 250px;
-    height: 18px;
-    left: 210px;
-    top: 851px;
-}
-
-.mensaje_instruccion{
-    position: absolute;
-    width: 229px;
-    height: 28px;
-    left: 240px;
-    top: 851px;
-}
-
-.mensaje_instruccion img{
-    display: inline;
-    width: 16px;
-    height: 16px;
-}
-
-.mensaje_instruccion p{
-    display: inline;
-    width: 205px;
-    height: 18px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    
-    color: #495057;
-    
-    opacity: 0.8;
-    padding-left: 5px;
-}
-
-.botones{
-    position: absolute;
-    width: 800px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
-}
-
-.boton_encriptar{
-    display: inline-block;
-    background: #0A3871;
-    border-radius: 24px;
-
-    width: 280px;
-    height: 19px;
-    padding: 24px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    
-    color: #FFFFFF;  
-}
-
-.boton_desencriptar{
-    display: inline-block;
-    background: #D8DFE8;
-    
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    padding: 24px;
-    margin-left: 20px;
-
-    width: 280px;
-    height: 19px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    
-    color: #0A3871;
-}
