@@ -22,7 +22,8 @@
             <section class="caja_entrada_botones">
 
                 <div class="entrada_texto">
-                    <input type="text" placeholder="Ingrese el texto aquí" id="intro_text">
+                    <textarea name="texto" id="intro_text" placeholder="Ingrese el texto aquí" cols="30" rows="8"></textarea>
+                    <!-- <input type="text" placeholder="Ingrese el texto aquí" id="intro_text"> -->
                 </div>
 
                 <div class="mensaje_instruccion">
@@ -31,8 +32,8 @@
                 </div>
     
                 <div class="botones">
-                    <button onclick="encriptar()" class="boton_encriptar">Encriptar</button>
-                    <button class="boton_desencriptar">Desencriptar</button>
+                    <button onclick="encriptar()" id="boton_encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" id="boton_desencriptar">Desencriptar</button>
                 </div>  
 
             </section>
@@ -48,5 +49,10 @@
             </section>
 
         </main>
+
+        <footer>
+            <p id="copyright"> &copy Copyright Sergio Adaros - 2023</p>
+        </footer>
+
     </body>
 </html>

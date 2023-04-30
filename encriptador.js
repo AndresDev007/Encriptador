@@ -3,3 +3,7 @@ function encriptar(){
     console.log(texto);
 }
 
+function desencriptar(){
+    console.log("texto desencriptado");
+}
+

@@ -1,71 +1,47 @@
 body {
-    position: relative;
     background: #F3F5FC;
-    width: 80%;
-    height: 740px;
-    margin: 0 auto;
 }
-
-header{
-    position: relative;
-    width: 100%;
-    height: 10%;
-    /* border: 2px solid orange; */
-}
-
 header img{
-    position: absolute;
-    width: 8%;
-    top: 40%;
-    left: 3%;
+    width: 5%;
+    margin: 1% 0 0 3%;
 }
-
 .caja_entrada_botones{
-    position: absolute;
-    width: 65%;
-    height: 81%;
-    /* border: 1px solid blue; */
-    margin: 1% 0 0 2%;
+    position: relative;
+    display: inline-block;
+    width: 53%;
+    height: 640px;
+    margin: 10px 0 0 10%;
 }
-
 #intro_text {
-    position: absolute;
-    width: 70%;
-    left: 13%;
-    top: 15%;
-    
+    width: 100%;
+    height: 500px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+
     
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
-
     background: #F3F5FC;
     color: #0A3871;
 }
-
 #intro_text::placeholder{
     color: #0A3871;
 }
-
 #intro_text:focus{
     outline: none;
 }
-
 .mensaje_instruccion{
-    position: absolute;
-    width: 80%;
-    left: 15%;
-    top: 81%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 13%;
 }
-
 .mensaje_instruccion img{
     display: inline;
 }
-
 .mensaje_instruccion p{
     display: inline;
     margin-left: 5px;
@@ -74,25 +50,20 @@ header img{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    
     color: #495057;
-    opacity: 0.8;
+    opacity: 0.9;
 }
-
 .botones{
-    position: absolute;
     width: 100%;
-    top: 85%;
     margin-top: 10px;
 }
-
-.boton_encriptar{
+#boton_encriptar{
     display: inline-block;
     background: #0A3871;
+    border: 1px solid #0A3871;
     border-radius: 24px;
-
-    width: 30%;
-    height: 40px;
+    width: 20%;
+    height: 15%;
     padding: 10px;
     margin-left: 13%;
     
@@ -102,21 +73,25 @@ header img{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    
     color: #FFFFFF;  
 }
-
-.boton_desencriptar{
+#boton_encriptar:hover{
+    background: #ffffffaf;
+    color: #0A3871;
+}
+#boton_encriptar:active{
+    background: #0A3871; ;
+    color: #ffffffff;
+}
+#boton_desencriptar{
     display: inline-block;
     background: #D8DFE8;
-    
     border: 1px solid #0A3871;
     border-radius: 24px;
     padding: 10px;
     margin-left: 20px;
-
-    width: 30%;
-    height: 40px;
+    width: 20%;
+    height: 15%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -124,36 +99,36 @@ header img{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    
     color: #0A3871;
 }
-
+#boton_desencriptar:hover{
+    background: #ffffffaf;
+    color: #0A3871;
+}
+#boton_desencriptar:active{
+    background: #0A3871; ;
+    color: #ffffffff;
+}
 .rectangulo {
     position: absolute;
-    width: 27%;
-    height: 667px;
-    left: 73%;
-    top: 3.5%;
-    
+    top: 80px;
+    right: 10%;
+    width: 25%;
+    height: 620px;
+
     background: #FFFFFF;
-    
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
-
 .muñeco {
-    position: absolute;
-    width: 80%;
-    margin: 30% 10% 0 10%;
+    width: 50%;
+    margin: 30% 25% 0 25%;
 }
-
 .mensajes_muñeco{
-    position: absolute;
-    width: 80%;
+    width: 50%;
     text-align: center;
-    margin: 110% 10% 0 10%;
+    margin: 10% 25% 0 25%;
 }
-
 .mensaje_muñeco_1{
     font-family: 'Inter';
     font-style: normal;
@@ -162,10 +137,8 @@ header img{
     line-height: 120%;
     
     text-align: center;
-    
     color: #343A40;
 }
-
 .mensaje_muñeco_2{
     font-family: 'Inter';
     font-style: normal;
@@ -174,8 +147,10 @@ header img{
     line-height: 150%;
 
     text-align: center;
-    
     color: #495057;
     margin-top: 20px;    
 }
-
+#copyright{
+    text-align: center;
+    padding: 5%;
+}
