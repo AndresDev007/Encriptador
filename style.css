@@ -78,6 +78,7 @@ header img{
 #boton_encriptar:hover{
     background: #ffffffaf;
     color: #0A3871;
+    transform: scale(1.1);
 }
 #boton_encriptar:active{
     background: #0A3871; ;
@@ -104,6 +105,7 @@ header img{
 #boton_desencriptar:hover{
     background: #ffffffaf;
     color: #0A3871;
+    transform: scale(1.1);
 }
 #boton_desencriptar:active{
     background: #0A3871; ;
@@ -120,14 +122,32 @@ header img{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
-.muñeco {
-    width: 50%;
-    margin: 30% 25% 0 25%;
-}
-.mensajes_muñeco{
-    width: 50%;
+#mensajes_muñeco{
+    width: 90%;
     text-align: center;
-    margin: 10% 25% 0 25%;
+    margin: 10% 5% 0 5%;
+}
+
+#traductor{
+    display: none;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    overflow: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background: #FFFFFF;
+    color: #0A3871;
+}
+.muñeco {
+    width: 90%;
+    margin: 30% 5% 0 5%;
+    margin-bottom: 20px;
 }
 .mensaje_muñeco_1{
     font-family: 'Inter';

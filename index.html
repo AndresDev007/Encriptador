@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 
 <html lang="es">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
@@ -12,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <header>
             <img src="recursos/Logo.png" alt="logo-alura">
@@ -20,31 +22,31 @@
         <main>
 
             <section class="caja_entrada_botones">
-
                 <div class="entrada_texto">
                     <textarea name="texto" id="intro_text" placeholder="Ingrese el texto aquí" cols="30" rows="8"></textarea>
-                    <!-- <input type="text" placeholder="Ingrese el texto aquí" id="intro_text"> -->
+                    <script>
+                        var input = document.querySelector("textarea");
+                        input.focus();
+                    </script>
                 </div>
-
                 <div class="mensaje_instruccion">
                     <img src="recursos/exclamation.png" alt="mensaje_instruccion">
                     <p>Solo letras minúsculas sin acento.</p>
                 </div>
-    
                 <div class="botones">
                     <button onclick="encriptar()" id="boton_encriptar">Encriptar</button>
                     <button onclick="desencriptar()" id="boton_desencriptar">Desencriptar</button>
                 </div>  
-
             </section>
             
             <section class="rectangulo">
-
-                <img src="recursos/Muñeco.png" alt="muñeco" class="muñeco">
-
-                <div class="mensajes_muñeco">
+                <div id="mensajes_muñeco">
+                    <img src="recursos/Muñeco.png" alt="muñeco" class="muñeco">
                     <p class="mensaje_muñeco_1">Ningún mensaje fué encontrado</p>
                     <p class="mensaje_muñeco_2">Ingresa texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div id="traductor">
+                    <p id="texto_traductor"></p>
                 </div>
             </section>
 
