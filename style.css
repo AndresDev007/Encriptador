@@ -13,13 +13,12 @@ header img{
     margin: 10px 0 0 10%;
 }
 #intro_text {
-    width: 100%;
+    width: 90%;
     height: 500px;
     border: none;
     border-radius: 15px;
     margin-top: 30px;
 
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -113,27 +112,28 @@ header img{
 }
 .rectangulo {
     position: absolute;
-    top: 80px;
+    top: 30px;
     right: 10%;
-    width: 25%;
-    height: 620px;
+    width: 30%;
+    height: 640px;
 
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 #mensajes_muñeco{
-    width: 90%;
+    display: block;
+    width: 80%;
     text-align: center;
-    margin: 10% 5% 0 5%;
+    margin: 10% 10% 0 10%;
 }
 
 #traductor{
     display: none;
     position: relative;
     width: 90%;
-    height: 90%;
-    margin: 5%;
+    height: 85%;
+    margin: 5% 5% 0 5%;
     overflow: auto;
 
     font-family: 'Inter';
@@ -144,10 +144,50 @@ header img{
     background: #FFFFFF;
     color: #0A3871;
 }
+
+
+/***********************************************************/
+#copiar{
+    display: none;
+    text-align: center;
+    margin-top: 3%;
+} 
+
+#boton_copiar{
+    background: #b5d6e1;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 10px;
+    width: 40%;
+    height: 15%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+#boton_copiar:hover{
+    background: #ffffffaf;
+    color: #0A3871;
+    transform: scale(1.1);
+}
+#boton_copiar:active{
+    background: #0A3871; ;
+    color: #ffffffff;
+}
+
+/*******************************************************/
+
+
+
+
 .muñeco {
-    width: 90%;
-    margin: 30% 5% 0 5%;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 20% 5% 0 5%;
+    margin-bottom: 40px;
 }
 .mensaje_muñeco_1{
     font-family: 'Inter';
