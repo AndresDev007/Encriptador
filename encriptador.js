@@ -3,6 +3,13 @@ let texto = "";
 function encriptar(){
     texto = document.getElementById("intro_text").value;
 
+    const caracteres = /[^a-z0-9 !ñ]/;
+    if(caracteres.test(texto)){
+        texto = "";
+        alert("Error! No se permiten letras mayúsculas, con acento o caracteres especiales, intentalo otra vez!")
+        input.value = "";
+        input.focus();
+    }
     if(texto !=''){
         document.getElementById("copiar").style.display = "block";
         document.getElementById("mensajes_muñeco").style.display = "none";
@@ -15,12 +22,20 @@ function encriptar(){
     else{
         document.getElementById("mensajes_muñeco").style.display = "block";
         document.getElementById("traductor").style.display = "none";
+        document.getElementById("copiar").style.display = "none";
+        input.focus();
     }
-
 }
-
 function desencriptar(){
     texto = document.getElementById("intro_text").value;
+
+    const caracteres = /[^a-z0-9 !ñ]/;
+    if(caracteres.test(texto)){
+        texto = "";
+        alert("Error! No se permiten letras mayúsculas, con acento o caracteres especiales, intentalo otra vez!")
+        input.value = "";
+        input.focus();
+    }
 
     if(texto !=''){
         document.getElementById("copiar").style.display = "block";
@@ -34,8 +49,14 @@ function desencriptar(){
     else{
         document.getElementById("mensajes_muñeco").style.display = "block";
         document.getElementById("traductor").style.display = "none";
+        document.getElementById("copiar").style.display = "none";
+        input.focus();
     }
 }
 function copiar(){
-    navigator.clipboard.writeText(texto)
+    navigator.clipboard.writeText(texto);
+    input.focus();
+}
+function reiniciar(){
+    location.reload();
 }
