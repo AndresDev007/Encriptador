@@ -1,5 +1,6 @@
 body {
     background: #F3F5FC;
+    width: 100%;
     height: 100%;
 }
 header img{
@@ -62,7 +63,7 @@ header h1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #495057;
     opacity: 0.9;
 }
@@ -126,8 +127,8 @@ header h1{
 }
 #boton_reiniciar{
     position: absolute;
-    top: 65vh;
-    margin-left: 70px;
+    top: 66vh;
+    margin-left: 40px;
     display: inline-block;
     background: #0A3871;
     border: 1px solid #0A3871;
@@ -190,7 +191,7 @@ header h1{
     border: 1px solid #0A3871;
     border-radius: 24px;
     padding: 10px;
-    width: 40%;
+    width: 150px;
     height: 15%;
     
     font-family: 'Inter';
@@ -212,6 +213,7 @@ header h1{
 }
 .muñeco {
     width: 80%;
+    height: 30vh;
     margin: 20% 5% 0 5%;
     margin-bottom: 40px;
 }
@@ -256,12 +258,15 @@ footer a{
     font-size: 30px;
     padding: 10px;
 }
+#linkedin{
+    margin-left: 220px;
+}
 #redes{
     display: inline-block;
-    position: relative;
-    text-align: right;
-    width: 10%;
-    margin-right: 30px;
+    position: fixed;
+    width: 200px;
+    left: 40px;
+    bottom: 15px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -271,13 +276,176 @@ footer a{
 }
 #dev{
     display: inline-block;
-    position: relative;
+    position: fixed;
     text-align: right;
-    width: 75%;
+    width: 300px;
+    right: 40px;
+    bottom: 15px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     color: #343A40;
+}
+@media screen and (max-width:1200px){
+    header img{
+        margin-top: 30px;
+    }
+    .caja_entrada_botones{
+        width: 90%;
+        height: 40vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .entrada_texto{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #intro_text{
+        height: 35vh;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .mensaje_instruccion {
+        margin-left: 0px;
+    }
+    #boton_reiniciar{
+        top: 45vh;
+    }
+    .rectangulo {
+        position: relative;
+        width: 90%;
+        left: 40px;
+        height: 50vh;
+        margin-bottom: 20vh;
+    }
+    #texto_traductor{
+        margin-top: 20px;
+    }
+    #copiar{
+        margin-top: 10px;
+    }
+    .muñeco {
+        display: none;
+    }
+    #mensajes_muñeco{
+        position: relative;
+        top: 10vh;
+    }
+    #redes{
+        width: 150px;
+    }
+    #dev{
+        width: 50%;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width:900px){
+    header img{
+        width: 100px;
+        margin-left: 5px;
+    }
+    header h1{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .mensaje_instruccion p{
+        font-size: 16px;
+    }
+    #boton_encriptar{
+        font-size: 24px;
+        border-radius: 30px;
+        width: 220px;
+        padding: 20px;
+        margin-left: 2%;
+    }
+    #boton_desencriptar{
+        font-size: 24px;
+        border-radius: 30px;
+        width: 220px;
+        padding: 20px;
+        margin-left: 2%;
+    }
+    #boton_reiniciar{
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 10px;
+        width: 120px;
+        height: 120px;
+    }
+    .mensaje_muñeco_1{
+        font-size: 24px;
+    }
+    .mensaje_muñeco_2{
+        font-size: 16px;
+    }
+    #redes{
+        left: 10px;
+    }
+    #linkedin{
+        margin-left: 150px;
+    }
+    #dev{
+        right: 10px;
+    }
+}
+@media screen and (max-width:686px) {
+    header h1{
+        display: block;
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .mensaje_instruccion{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #boton_encriptar{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+    }
+    #boton_desencriptar{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    #boton_reiniciar{
+        position: relative;
+        top: 3vh;
+        margin: 0 35% 0 35%;
+    }
+    .rectangulo{
+        margin-top: 70px;
+        left: 5%;
+    }
+    footer{
+        height: 100px;
+    }
+    footer a{
+        font-size: 25px;
+        padding: 15px;
+        left: 60px;
+    }
+    #linkedin{
+        margin-left: 130px;
+    }
+    #redes{
+        font-size: 24px;
+        width: 200px;
+        left: 10px;
+        bottom: 60px;
+    }
+    #dev{
+        text-align: left;
+        left: 10px;
+        width: 300px;
+        right: 40px;
+    }
+    
 }
