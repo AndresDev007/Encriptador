@@ -426,34 +426,38 @@ footer a{
     #boton_reiniciar{
         position: relative;
         top: 3vh;
-        margin: 0 35% 0 35%;
+        margin: 0 33% 0 33%;
     }
     .rectangulo{
         margin-top: 70px;
         left: 5%;
     }
     footer{
-        height: 100px;
+        height: 80px;
+    }
+    .redes_sociales{
+        width: 100%;
+        text-align: center;
     }
     footer a{
+        padding: 15px 10px 15px 10px;
         font-size: 25px;
-        padding: 15px;
         left: 60px;
+        margin-left: 0px;
     }
     #linkedin{
-        margin-left: 130px;
+        margin-left: 20%;
     }
     #redes{
         font-size: 24px;
         width: 200px;
-        left: 10px;
-        bottom: 60px;
+        left: 6%;
+        bottom: 40px;
     }
     #dev{
-        text-align: left;
-        left: 10px;
         width: 300px;
-        right: 40px;
+        left: 8%;
+        bottom: 10px;
     }
     
 }
