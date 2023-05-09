@@ -260,6 +260,13 @@ footer a{
 }
 #linkedin{
     margin-left: 220px;
+    color: #0e76a8;
+}
+#github{
+    color: #171515;
+}
+#twitter{
+    color: #00acee;
 }
 #redes{
     display: inline-block;
